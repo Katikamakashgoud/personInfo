@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link> {/* Link to Contact route */}
           </li>
           <li>
-            <Link to="/bye">Goodbye</Link> {/* Link to Goodbye route */}
+            <Link to="/search">search</Link> {/* Link to Goodbye route */}
           </li>
         </ul>
       </nav>

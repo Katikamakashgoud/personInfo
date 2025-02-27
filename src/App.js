@@ -5,6 +5,7 @@ import Resume from "./components/Resume";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import SearchPage from "./components/SearchPage";
 
 import k from './assets/k2.jpg'
 
@@ -15,6 +16,8 @@ function HomePage() {
       <img src={k} alt="Home Page" className="home-image" />
       <Link to="/pan-card" className="button">PAN Card</Link>
       <Link to="/aadhaar-card" className="button">Aadhaar Card</Link>
+      <Link to="/">Home</Link>
+      <Link to="/search">Search</Link>
     </div>
   );
 }
@@ -32,11 +35,14 @@ function App() {
         <Route path="/pan-card" element={<PanCard />} />
         <Route path="/aadhaar-card" element={<AadhaarCard />} />
 
+        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/search" element={<SearchPage />} />
+
         {/* Other Pages */}
         <Route path="/h" element={<Hero />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<h1>Contact Page</h1>} />
-        <Route path="/bye" element={<h1>Goodbye Page</h1>} />
+        <Route path="/search" element={<h1>Goodbye Page</h1>} />
       </Routes>
     </Router>
   );
