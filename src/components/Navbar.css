@@ -1,36 +1,52 @@
 /* Navbar container */
-nav {
-    background-color: #333; /* Dark background for the navbar */
-    padding: 15px; /* Add padding around the navbar */
-    text-align: center; /* Center the nav items */
-  }
-  
-  /* Unordered list for navbar links */
-  nav ul {
-    list-style-type: none; /* Remove default list bullets */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Display links in a row */
-    justify-content: center; /* Center the links horizontally */
-  }
-  
-  /* Navbar list items */
-  nav ul li {
-    margin: 0 20px; /* Add some space between the list items */
-  }
-  
-  /* Style the links */
-  nav ul li a {
-    color: white; /* White color for links */
-    text-decoration: none; /* Remove the underline from links */
-    font-size: 18px; /* Make the font a bit larger */
-    font-weight: bold; /* Make the text bold */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-  }
-  
-  /* Hover effect for the links */
-  nav ul li a:hover {
-    color: #4CAF50; /* Green color on hover */
-    text-decoration: underline; /* Underline the link when hovered */
-  }
-  
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 15px 20px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Login & Register buttons */
+.login-button {
+  background: #ff6b6b;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background: #ff3b3b;
+}
+
+.register-button {
+  background: #4caf50;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.register-button:hover {
+  background: #45a049;
+}

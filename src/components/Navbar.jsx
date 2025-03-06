@@ -1,27 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
-import './Navbar.css'
-import Resume from './Resume';
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
+import "./Navbar.css"; // Import CSS for styling
+
 const Navbar = () => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link> {/* Link to Home route */}
-          </li>
-          <li>
-            <Link to="/Resume">resume</Link> {/* Link to About route */}
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link> {/* Link to Contact route */}
-          </li>
-          <li>
-            <Link to="/search">search</Link> {/* Link to Goodbye route */}
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/Resume">Resume</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
+       
+        <li>
+          <Link to="/register" className="register-button">Sign in</Link> {/* Added Register */}
+        </li>
+      </ul>
+    </nav>
   );
 };
 

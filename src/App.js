@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import SearchPage from "./components/SearchPage";
+import Login from "./components/Login";
+import RegisterPage from "./components/RegisterPage";
 
 import k from './assets/k2.jpg'
 
@@ -31,9 +33,14 @@ function App() {
         {/* Home Page */}
         <Route path="/" element={<HomePage />} />
 
+        <Route path="/login" element={<Login />} />
+
         {/* PAN & Aadhaar Card Pages */}
         <Route path="/pan-card" element={<PanCard />} />
         <Route path="/aadhaar-card" element={<AadhaarCard />} />
+
+        <Route path="/register" element={<RegisterPage />} />
+        
 
         <Route path="/" element={<h1>Home Page</h1>} />
         <Route path="/search" element={<SearchPage />} />

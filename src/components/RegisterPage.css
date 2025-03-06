@@ -1,0 +1,73 @@
+/* Centering the registration form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  /* Registration form box */
+  .register-box {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .register-box h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .register-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button */
+  .register-box button {
+    width: 100%;
+    padding: 10px;
+    background: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .register-box button:hover {
+    background: #4a67df;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Login link */
+  .register-box p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .register-box a {
+    color: #6e8efb;
+    text-decoration: none;
+  }
+  
+  .register-box a:hover {
+    text-decoration: underline;
+  }
+  
